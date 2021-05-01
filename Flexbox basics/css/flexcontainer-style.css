@@ -28,4 +28,11 @@
   background: lightblue;
   margin: 0.5em;
   /* width: 25%; */
+
+  /*
+  Using flexbox property inside flexbox to center it's content
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
