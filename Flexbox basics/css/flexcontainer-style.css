@@ -9,10 +9,12 @@
   display: flex;
   /*By default flex wrap is set to no-wrap which causes elements to overflow*/
   flex-wrap: wrap;
+  /*flex-flow property is combination of flex-direction and flex-wrap*/
+  flex-flow: column wrap;
 }
 
 .item {
   background: lightblue;
   margin: 0.5em;
-  width: 25%;
+  /* width: 25%; */
 }
