@@ -1,6 +1,7 @@
 .flexbox-container {
   background-color: green;
   display: flex;
+  height: 90vh;
 }
 
 .flexbox-item {
@@ -25,6 +26,9 @@
   /*this item grows to fill the available space when screen is resized*/
   flex-grow: 1;
   flex-basis: 0;
+
+  /*align self positions elements individually within flexbox container*/
+  align-self: center;
 }
 
 .item-3 {
