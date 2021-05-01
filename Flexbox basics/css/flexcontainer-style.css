@@ -14,6 +14,9 @@
 
   /*Aligns element in respect to main axis*/
   justify-content: space-evenly;
+
+  /*Align elements in respect to cross axis*/
+  align-items: flex-end;
 }
 
 .item {
