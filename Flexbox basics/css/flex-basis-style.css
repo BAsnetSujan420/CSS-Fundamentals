@@ -17,12 +17,14 @@
   min-height: 100px;
   /*this item does not shrink at all*/
   flex-shrink: 0;
+  flex-basis: 0;
 }
 
 .item-2 {
   min-height: 200px;
   /*this item grows to fill the available space when screen is resized*/
   flex-grow: 1;
+  flex-basis: 0;
 }
 
 .item-3 {
@@ -32,4 +34,6 @@
     because generally flex-grow takes all the left over space and divides among flex grow property of elements
     */
   flex-grow: 2;
+  /*Flex basis set to 0 to make item 3 grow twice as big as item 2*/
+  flex-basis: 0;
 }
