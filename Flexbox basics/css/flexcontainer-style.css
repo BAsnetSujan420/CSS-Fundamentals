@@ -7,9 +7,12 @@
 
   /*By default flex direction is row*/
   display: flex;
+  /*By default flex wrap is set to no-wrap which causes elements to overflow*/
+  flex-wrap: wrap;
 }
 
 .item {
   background: lightblue;
   margin: 0.5em;
+  width: 25%;
 }
