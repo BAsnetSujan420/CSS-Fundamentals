@@ -7,7 +7,7 @@
 
   /*By default flex direction is row*/
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /*By default flex wrap is set to no-wrap which causes elements to overflow*/
   flex-wrap: wrap;
   /*flex-flow property is combination of flex-direction and flex-wrap*/
@@ -18,6 +18,9 @@
 
   /*Align elements in respect to cross axis*/
   align-items: flex-end;
+
+  /*align-content aligns elements in container as one group of elements*/
+  align-content: center;
 }
 
 .item {
