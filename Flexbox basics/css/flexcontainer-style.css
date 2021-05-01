@@ -7,13 +7,14 @@
 
   /*By default flex direction is row*/
   display: flex;
+  flex-direction: column;
   /*By default flex wrap is set to no-wrap which causes elements to overflow*/
   flex-wrap: wrap;
   /*flex-flow property is combination of flex-direction and flex-wrap*/
   /* flex-flow: column wrap; */
 
   /*Aligns element in respect to main axis*/
-  justify-content: space-evenly;
+  justify-content: center;
 
   /*Align elements in respect to cross axis*/
   align-items: flex-end;
