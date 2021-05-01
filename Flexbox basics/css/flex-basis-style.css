@@ -20,6 +20,7 @@
 
 .item-2 {
   min-height: 200px;
+  flex-grow: 1;
 }
 
 .item-3 {
