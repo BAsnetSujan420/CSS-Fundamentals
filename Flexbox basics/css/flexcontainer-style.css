@@ -10,7 +10,10 @@
   /*By default flex wrap is set to no-wrap which causes elements to overflow*/
   flex-wrap: wrap;
   /*flex-flow property is combination of flex-direction and flex-wrap*/
-  flex-flow: column wrap;
+  /* flex-flow: column wrap; */
+
+  /*Aligns element in respect to main axis*/
+  justify-content: space-evenly;
 }
 
 .item {
