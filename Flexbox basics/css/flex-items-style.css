@@ -1,7 +1,7 @@
 .container {
   background: pink;
   height: 50vh;
-  width: 50vw;
+  width: 90vw;
   padding: 0.5em;
   margin: 25vh auto 0;
 
@@ -14,5 +14,26 @@
 }
 
 .one {
+  /*flex grow takes all the left over space and divides among flex grow properties*/
+  /* flex-grow: 1; */
+
+  /*Flex-basis is the starting point for element width to either grow or shrink*/
+  flex-basis: 250px;
+}
+
+.two {
+  /*
+    Flex grow set to 0 acts like max-width
+    Flex shrink set to 0 acts like min-width
+    */
   flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+}
+
+.three {
+  /*this element grows and shrinks faster than other two when screen resized*/
+  flex-grow: 3;
+  flex-shrink: 3;
+  flex-basis: 250px;
 }
