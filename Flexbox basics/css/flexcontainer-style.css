@@ -17,10 +17,11 @@
   justify-content: center;
 
   /*Align elements in respect to cross axis*/
-  align-items: flex-end;
+  /*By default align items is stretch to fill available space*/
+  align-items: stretch;
 
   /*align-content aligns elements in container as one group of elements*/
-  align-content: center;
+  /* align-content: center; */
 }
 
 .item {
