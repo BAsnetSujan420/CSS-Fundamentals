@@ -4,6 +4,9 @@
   width: 50vw;
   padding: 0.5em;
   margin: 25vh auto 0;
+
+  /*By default flex direction is row*/
+  display: flex;
 }
 
 .item {
