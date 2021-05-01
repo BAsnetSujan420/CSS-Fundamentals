@@ -12,3 +12,7 @@
   background: lightblue;
   margin: 0.6em;
 }
+
+.one {
+  flex-grow: 1;
+}
