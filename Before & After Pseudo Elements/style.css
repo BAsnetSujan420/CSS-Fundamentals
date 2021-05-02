@@ -9,6 +9,7 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #272727;
@@ -50,4 +51,28 @@ a[href^="https"]::after {
   font-weight: 900;
   font-size: 0.8em;
   color: greenyellow;
+}
+
+/*BUTTON*/
+
+a.btn {
+  position: relative;
+  overflow: hidden;
+  color: #272727;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+}
+
+a.btn::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  background: #fff;
+  border: 4px solid #272727;
+  z-index: -1;
 }
