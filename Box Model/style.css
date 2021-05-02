@@ -12,6 +12,7 @@
 
 .box-one {
   margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .box-two {
