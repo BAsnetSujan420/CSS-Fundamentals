@@ -31,3 +31,23 @@ p::after {
   font-size: 2rem;
   color: #ff652f;
 }
+
+p a {
+  text-decoration: none;
+  color: #ff652f;
+}
+
+a[href$=".pdf"]::after {
+  content: " \f1c1";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.9em;
+}
+
+a[href^="https"]::after {
+  content: "\f360";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.8em;
+  color: greenyellow;
+}
