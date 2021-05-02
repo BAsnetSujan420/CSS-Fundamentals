@@ -86,4 +86,13 @@ a.btn::after {
   right: 0;
   background: #ff652f;
   z-index: -2;
+
+  transform: rotate(-90deg);
+  transform: rotate(-90deg) translate(-50%, -100%);
+  transform-origin: bottom left;
+  transition: transform 300ms;
+}
+
+.btn:hover::after {
+  transform: rotate(0) translate(0, 0);
 }
