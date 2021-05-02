@@ -57,7 +57,7 @@ a[href^="https"]::after {
 
 a.btn {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   color: #272727;
   font-weight: 700;
   text-transform: uppercase;
@@ -88,8 +88,9 @@ a.btn::after {
   z-index: -2;
 
   transform: rotate(-90deg);
-  transform: rotate(-90deg) translate(-50%, -100%);
-  transform-origin: bottom left;
+  /* transform: rotate(-90deg) translate(-50%, -100%);
+  transform-origin: bottom left; */
+  transform: rotate(0) translate(-75%, 50%);
   transition: transform 300ms;
 }
 
