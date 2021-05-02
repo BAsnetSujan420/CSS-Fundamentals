@@ -57,7 +57,7 @@ a[href^="https"]::after {
 
 a.btn {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: #272727;
   font-weight: 700;
   text-transform: uppercase;
