@@ -5,7 +5,7 @@ body {
 }
 
 .me {
-  position: relative;
+  position: absolute;
   /*
   if directions is applied to position relative DOM still keeps the original space of content
  Also it could sit on top of other elements
@@ -13,4 +13,16 @@ body {
   top: 30px;
   left: 60px;
   background: magenta;
+}
+
+.grand-dad {
+  position: relative;
+  height: 300px;
+  display: flow-root;
+  background: lightblue;
+}
+
+.dad {
+  margin: 60px;
+  border: 2px solid green;
 }
