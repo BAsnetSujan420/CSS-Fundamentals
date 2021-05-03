@@ -10,7 +10,11 @@ body {
   padding: 2em;
   color:red;
   /*box shadow with horizontal and vertical offset and blur radius, spread*/
-  box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 30px 30px 30px red, 
+              30px -30px 30px blue, 
+             -30px -30px 30px green,
+             -30px 30px 30px purple;
+             
   margin-top: 200px;
   /*box shadow with negative value moves shadow opposite direction of default*/
   /* box-shadow: -100px -100px; */
