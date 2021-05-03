@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
+}
+
+.box {
+  background: white;
+  padding: 2em;
+  /*box shadow with horizontal and vertical offset*/
+  box-shadow: 20px 20px;
+}
