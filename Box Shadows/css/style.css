@@ -8,8 +8,8 @@ body {
 .box {
   background: white;
   padding: 2em;
-  /*box shadow with horizontal and vertical offset and blur radius*/
-  box-shadow: 20px 20px 20px;;
+  /*box shadow with horizontal and vertical offset and blur radius, spread*/
+  box-shadow: 20px 20px 20px 200px;
   margin-top: 200px;
   /*box shadow with negative value moves shadow opposite direction of default*/
   /* box-shadow: -100px -100px; */
