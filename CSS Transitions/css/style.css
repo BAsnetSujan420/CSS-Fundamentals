@@ -7,9 +7,9 @@ body {
   height: 300px;
   background: #3dccc7;
 
-  transition-duration: 1000ms;
+  transition-duration: 700ms;
   transition-property: background, transform;
-  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.22, -0.31, 0.39, 1.76);
 }
 
 .box:hover {
