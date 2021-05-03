@@ -10,6 +10,7 @@ body {
   transition-duration: 700ms;
   transition-property: background, transform;
   transition-timing-function: cubic-bezier(0.22, -0.31, 0.39, 1.76);
+  transition-delay: 1s;
 }
 
 .box:hover {
