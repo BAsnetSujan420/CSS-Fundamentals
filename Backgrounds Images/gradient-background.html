@@ -7,7 +7,7 @@
     <title>CSS Gradients</title>
     <style>
       section div {
-        min-height: 150px;
+        min-height: 200px;
         border: 1px solid #333;
         margin: 1rem;
       }
@@ -37,6 +37,16 @@
             rgba(255, 0, 0, 0.5),
             rgba(255, 0, 0, 0.5) 10px,
             transparent 10px,
+            transparent 30px
+          );
+      }
+      .repeating-radial {
+        background: hsl(240, 30%, 80%)
+          repeating-radial-gradient(
+            circle,
+            black,
+            black 20px,
+            transparent 20px,
             transparent 30px
           );
       }
