@@ -45,3 +45,7 @@
   grid-column: span 2; */
   grid-area: 2 / 1 / span 3 / span 2;
 }
+
+.item-4 {
+  grid-area: 2 / 2 / span 2 / span 2;
+}
