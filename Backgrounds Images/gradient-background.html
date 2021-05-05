@@ -26,12 +26,19 @@
       }
       .repeating-linear {
         background: repeating-linear-gradient(
-          45deg,
-          yellow 0px,
-          black 40px,
-          yellow 40px,
-          red 80px
-        );
+            45deg,
+            red,
+            red 10px,
+            transparent 10px,
+            transparent 30px
+          ),
+          repeating-linear-gradient(
+            -45deg,
+            rgba(255, 0, 0, 0.5),
+            rgba(255, 0, 0, 0.5) 10px,
+            transparent 10px,
+            transparent 30px
+          );
       }
     </style>
   </head>
