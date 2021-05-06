@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  padding: 2em;
+  background: rgb(236, 244, 255);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 4em;
+  margin-top: 2em;
+}
+
+.card {
+  background: white;
+  padding: 1.5em;
+  border-radius: 0.4em;
+}
+
+h1 {
+  text-shadow: 6px 12px 10px rgba(0, 0, 0, 0.2);
+}
