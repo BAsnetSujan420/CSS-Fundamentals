@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 2D Transforms</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        color: #fff;
+        text-align: center;
+        font-size: 36px;
+        line-height: 150px;
+        margin: 3rem;
+      }
+
+      .box:hover {
+        outline: 1rem solid gold;
+        opacity: 0.5;
+      }
+
+      .one {
+        background-color: cornflowerblue;
+        transform: skewY(-40deg) scaleY(1.5) scaleX(2);
+        transform-origin: left -120px;
+      }
+
+      .two {
+        background-color: rebeccapurple;
+        transform: skewY(40deg);
+      }
+
+      .three {
+        background-color: orangered;
+        transform: skewY(-40deg) scaleY(1.8);
+        transform-origin: left 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box one">ONE</div>
+    <div class="box two">TWO</div>
+    <div class="box three">THREE</div>
+  </body>
+</html>
