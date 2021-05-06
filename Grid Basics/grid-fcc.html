@@ -13,18 +13,36 @@
         margin: 10px;
         border: 3px solid red;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        /*
+        When container's size exceeds the size of all the items combined
+        Auto-fill keeps inserting empty rows or columns and pushes items to the side
+        */
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
         grid-template-rows: repeat(3, minmax(150px, 1fr));
         grid-gap: 10px;
-        grid-template-areas:
-          "header header header"
-          "advert content content"
-          "footer footer footer";
+        
+      }
+
+      .container2 {
+        font-size: 40px;
+        width: 100%;
+        min-height: 350px;
+        margin: 10px;
+        border: 3px solid red;
+        display: grid;
+        /*
+        When container's size exceeds the size of all elements combined
+        Auto-fill collapses those empty rows/ columns and stretches items to fit the size of container
+        */
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        grid-template-rows: repeat(3, minmax(150px, 1fr));
+        grid-gap: 10px;
+        
       }
 
       .item1 {
         background-color: lightskyblue;
-        grid-area: header;
+     
       }
       .item2 {
         background-color: lightsalmon;
@@ -43,11 +61,12 @@
         grid-row: 2 / 4; */
 
         /* grid area => horizontal start / vertical start / horizontal end / vertical end*/
-        grid-area: 3 / 1 / 5 / 4;
+        /* grid-area: 3 / 1 / 5 / 4; */
       }
     </style>
   </head>
   <body>
+      <h3>Flexible Layout with auto-fill</h3>
     <div class="container">
       <div class="item1">1</div>
       <div class="item2">2</div>
@@ -55,5 +74,12 @@
       <div class="item4">4</div>
       <div class="item5">5</div>
     </div>
+    <h3>Flexible Layout with auto-fit</h3>
+    <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
   </body>
 </html>
