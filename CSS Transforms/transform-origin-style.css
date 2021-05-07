@@ -81,6 +81,27 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
+  transition: transform 250ms ease-in;
+}
+
+.button-one::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.button-one:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.button-two::after {
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.button-two:hover::after {
+  transform: scaleY(1);
+  transform-origin: top;
 }
 
 .card {
