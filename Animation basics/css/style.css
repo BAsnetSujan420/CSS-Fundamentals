@@ -50,6 +50,7 @@ body {
   animation-duration: 3s;
   /*animation-fill-mode => forwards, backwards, both*/
   animation-fill-mode: both;
+  animation-iteration-count: 16;
 }
 
 /*Animation*/
