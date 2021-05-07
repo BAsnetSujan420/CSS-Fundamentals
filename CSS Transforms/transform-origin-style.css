@@ -104,6 +104,16 @@ body {
   transform-origin: top;
 }
 
+.button-three:after {
+  transform: scale(0);
+  transform-origin: bottom right;
+}
+
+.button-three:hover::after {
+  transform: scale(1);
+  transform-origin: top left;
+}
+
 .card {
   padding: 1.8rem;
   background-image: url(https://unsplash.it/600);
