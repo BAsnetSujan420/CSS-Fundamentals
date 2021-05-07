@@ -70,6 +70,8 @@ body {
   animation-iteration-count: 16;
   /*animation-timing-function => ease, ease-out, ease-in, ease-in-out, cubic-bezier*/
   animation-timing-function: cubic-bezier(0, 0.77, 1, 0.28);
+
+  animation: drive 3s both infinite linear, jump 0.3s 1.2s ease;
 }
 
 .luigi {
@@ -102,5 +104,17 @@ body {
   }
   to {
     left: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: -40px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: -40px;
   }
 }
