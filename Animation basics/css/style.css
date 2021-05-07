@@ -48,16 +48,17 @@ body {
   left: 0;
   animation-name: drive;
   animation-duration: 3s;
-
+  /*animation-fill-mode => forwards, backwards, both*/
+  animation-fill-mode: both;
 }
 
 /*Animation*/
 
 @keyframes drive {
   from {
-    transform: translateX(0px);
+    transform: translateX(200px);
   }
   to {
-    transform: translateX(700px);
+    transform: translateX(1000px);
   }
 }
