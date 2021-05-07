@@ -20,7 +20,17 @@
       }
 
       .parent:hover .child {
-        transform: translateX(100%);
+        /* transform: translateX(100%); */
+        animation: left-to-right 1s ease-in forwards;
+      }
+
+      @keyframes left-to-right {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(100%);
+        }
       }
     </style>
   </head>
