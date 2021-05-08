@@ -123,3 +123,28 @@ body {
   color: white;
   text-align: left;
 }
+
+.card-title {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: -1.9rem;
+  bottom: -0.25rem;
+  width: calc(100% + 4rem);
+  background: #ee6352;
+  z-index: -1;
+
+  transform: scaleX(0.075);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+
+.card:hover .card-title::after {
+  transform: scaleX(1);
+}
