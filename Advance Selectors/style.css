@@ -104,3 +104,29 @@ a:hover {
 .general-sibling .box ~ .box {
   background: red;
 }
+
+/*Attribute Selectors*/
+
+a[target] {
+  color: darkblue;
+}
+
+a[href="about.html"] {
+  color: red;
+}
+
+a[class|="another"] {
+  color: purple;
+}
+
+a[href^="http"] {
+  color: orange;
+}
+
+a[href*="google"] {
+  color: black;
+}
+
+a[href$=".ca"] {
+  color: blue;
+}
