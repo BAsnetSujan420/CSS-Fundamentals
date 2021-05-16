@@ -98,3 +98,9 @@ a:hover {
 .adjacent-sibling .box + .box {
   background: red;
 }
+
+/*General sibling selector*/
+
+.general-sibling .box ~ .box {
+  background: red;
+}
