@@ -41,3 +41,34 @@ section {
   margin: 50px auto;
   padding: 50px;
 }
+
+/*All Children Selector*/
+h2 span {
+  font-size: 5em;
+  font-weight: 700;
+  display: block;
+  color: #18314f;
+}
+
+.universal code {
+  background: #c3ddd7;
+  padding: 0.25em;
+}
+
+.adjacent-sibling .box {
+  height: 75px;
+  width: 75px;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+.general-sibling .box {
+  height: 75px;
+  width: 75px;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+.direct-children p {
+  color: red;
+}
