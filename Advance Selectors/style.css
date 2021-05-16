@@ -92,3 +92,9 @@ h2::after {
 a:hover {
   color: red;
 }
+
+/*Adjacent sibling selector*/
+
+.adjacent-sibling .box + .box {
+  background: red;
+}
