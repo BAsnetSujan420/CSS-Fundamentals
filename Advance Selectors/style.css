@@ -78,3 +78,17 @@ h2 span {
 .direct-children > p {
   color: green;
 }
+
+/*Pseudo selectors*/
+
+h2::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid rgba(#18314f, 0.25);
+  width: 20%;
+  margin: 3em auto 0;
+}
+
+a:hover {
+  color: red;
+}
