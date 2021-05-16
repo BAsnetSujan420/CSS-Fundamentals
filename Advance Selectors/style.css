@@ -72,3 +72,9 @@ h2 span {
 .direct-children p {
   color: red;
 }
+
+/*Direct Children Selector*/
+
+.direct-children > p {
+  color: green;
+}
