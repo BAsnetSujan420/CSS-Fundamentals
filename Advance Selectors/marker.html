@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marker Pseudo Element</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      div {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+      }
+
+      ol li::marker {
+        color: red;
+        font-weight: 700;
+        content: "\f04";
+        font-family: "Font Awesome 5 Free";
+        font-size: 0.9em;
+      }
+
+      .channels > li {
+        padding-left: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ol class="channels">
+        <li>CSS Tricks</li>
+        <li>FreeCodeCamp</li>
+        <li>Design Course</li>
+        <li>CodeSTACKr</li>
+      </ol>
+    </div>
+  </body>
+</html>
