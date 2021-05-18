@@ -52,7 +52,31 @@
       a[data-spacing] {
         letter-spacing: 2px;
       }
+
+      a[href^="https"] {
+        color: orange;
+      }
+
+      a[href$=".pdf"]::after {
+        content: " \f1c1";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 0.9em;
+      }
+
+      a[href*="google"]::after {
+        content: "\f360";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 0.8em;
+        color: greenyellow;
+      }
     </style>
+    <script
+      defer
+      src="https://kit.fontawesome.com/8a74f86b37.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section class="attribute">
