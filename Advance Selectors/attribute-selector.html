@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #272727;
+        color: #fff;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin: 2rem;
+      }
+
+      a {
+        color: white;
+      }
+
+      a[target] {
+        color: gray;
+      }
+
+      a[href="about.html"] {
+        color: red;
+      }
+
+      a[class="another-link"] {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="attribute">
+      <h2 class="subhead"><span>[ ]</span>Attribute Selector</h2>
+      <a href="https://www.google.com" class="link-one">Google</a>
+      <a href="https://www.google.ca" data-red="true" class="link-two"
+        >Google Canada</a
+      >
+      <a href="about.html" class="link-three">About page</a>
+      <a
+        href="http://awesomesocialnetwork.com"
+        class="link-four"
+        target="_blank"
+        data-red="true"
+        >Socialize</a
+      >
+      <a href="ebook.pdf" class="link-five">PDF file</a>
+      <a href="#" class="another-link">Yet another link</a>
+      <p>
+        Lorem ipsum dolor sit amet
+        <a href="demo.pdf">consectetur</a> adipisicing elit. Numquam
+        <a href="https://google.com">google </a> voluptatem veritatis inventore
+        exercitationem quae.
+      </p>
+    </section>
+  </body>
+</html>
